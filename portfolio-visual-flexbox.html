@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Nagy Lajos Portfolio project</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <p>&lt;this.is.louie&gt;</p>
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="index.html#ambitions" class="nav__link">My Ambitions</a>
+        </li>
+        <li class="nav__item">
+          <a href="index.html#about" class="nav__link">About Me</a>
+        </li>
+        <li class="nav__item">
+          <a href="index.html#work" class="nav__link">My projects</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Introduction-->
+  <section class="intro">
+    <h1 class="section__title section__title--intro">
+      visual help <strong>for Flexbox</strong>
+    </h1>
+    <p class="setion__subtitle section__subtitle--intro">
+      explore the effects
+    </p>
+    <img src="./img/portre.jpg" alt="project picture" class="intro__img" />
+  </section>
+
+  <div class="portfolio-item-individual">
+    <h3>What is this project about?</h3>
+    <p>
+      This is a visual help to see the aggregated effects of different Flexbox
+      settings.
+    </p>
+    <div class="card">
+      <div class="card__content">
+        <div class="card__front">
+          <h3 class="card__title">HOVER</h3>
+          <p class="card__subtitle">TO LEARN MORE ABOUT IT:</p>
+        </div>
+        <div class="card__back">
+          <ul class="nav__list card__body">
+            <li class="nav__item"><a href="http://www.nagylajos.info/visualflexbox/" class="nav__link" target="_blank">visit website</a></li>
+            <li class="nav__item"><a href="https://github.com/NagyLajos71/visual_Flexbox.git" class="nav__link" target="_blank">check thed code</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p>
+      Is this a niche project? Not at all! There are other available tools
+      exist on the Internet to achive the same task. The reason I created this
+      app so I can get my head around the differences among align-items,
+      align-content, align-self settings and other similarly confusing titles,
+      also to visualize and experiment the aggregated effects of multiple
+      Flexbox settings.
+    </p>
+    <h3>The code behind the project</h3>
+    <p>
+      I created it with
+      <strong><span class="circle-sketch-highlight">vanilla</span>
+        JavaScript</strong>. The JS code is based on plenty of Event Listeners, separated into two
+      modules.
+    </p>
+    <p>
+      The backbone of the CSS layout -although this project is about Flexbox-
+      is <strong>CSS grid</strong>. There is no special reason for that apart
+      from my personal preference.
+    </p>
+    <p>Have fun, and play around with this app!</p>
+  </div>
+
+  <!--Footer-->
+  <footer class="footer">
+    <a href="mailto:lajos.nagy.budapest@gmail.com" class="footer-link">lajos.nagy.budapest@gmail.com</a>
+    <p>+36 20 288 9556</p>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://github.com/NagyLajos71/visual_Flexbox.git" target="_blank"><i
+            class="fab fa-github"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="http://www.nagylajos.info/visualflexbox/" target="_blank"><i class="fas fa-laptop-code"></i></a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>
